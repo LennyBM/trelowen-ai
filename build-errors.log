@@ -1,0 +1,13 @@
+
+> trelowen-ai@1.0.0 build
+> tsc
+
+src/routes/email.ts(13,32): error TS2551: Property 'createTransporter' does not exist on type 'typeof import("/home/ubuntu/trelowen-ai/node_modules/@types/nodemailer/index")'. Did you mean 'createTransport'?
+src/routes/ghlWebhook.ts(113,7): error TS2322: Type '{ role: string; content: any; }' is not assignable to type '{ role: "user" | "assistant" | "system"; content: string; }'.
+  Types of property 'role' are incompatible.
+    Type 'string' is not assignable to type '"user" | "assistant" | "system"'.
+src/routes/ghlWebhook.ts(117,9): error TS2322: Type 'string' is not assignable to type '"user" | "assistant" | "system"'.
+src/routes/sms.ts(60,51): error TS2345: Argument of type '{ role: string; content: any; }[]' is not assignable to parameter of type '{ role: "user" | "assistant" | "system"; content: string; }[]'.
+  Type '{ role: string; content: any; }' is not assignable to type '{ role: "user" | "assistant" | "system"; content: string; }'.
+    Types of property 'role' are incompatible.
+      Type 'string' is not assignable to type '"user" | "assistant" | "system"'.
