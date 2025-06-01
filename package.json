@@ -2,9 +2,9 @@
   "name": "trelowen-ai",
   "version": "1.0.0",
   "description": "Comprehensive OpenAI-powered solution for Trelowen luxury lodges with GHL integration",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node index.js",
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "build-kb": "ts-node src/embeddings/buildKB.ts",
